@@ -1,1 +1,33 @@
-<h1>Tareas</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+
+<body>
+    <h1>Tasks</h1>
+    <p>Tasks:
+        {% for task in tasks %}
+    <div>
+        {# note: This is a task #}
+        <h3>
+            {% if task.done == False%}
+            ⏲️
+            {% else %}
+            ✅
+            {% endif %}
+            {{ task.project. name }}
+        </h3>
+        <p>{{ task.title }} - {{ task.description }}</p>
+        <button>Delete</button>
+        <button>✅</button>
+    </div>
+    {% endfor %}
+    </p>
+</body>
+
+</html>

@@ -10,7 +10,13 @@
 
 <body>
     <h1>Projects</h1>
-    <p>Projects: {{projects}}</p>
+    <p>Projects:
+        {% for project in projects %}
+        <di>
+            {{ project.name }}
+        </di>
+        {% endfor %}
+    </p>
 </body>
 
 </html>
