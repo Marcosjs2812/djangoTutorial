@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    {% extends 'layouts/base.html' %}
+    {% block content %}
     <h1>About</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias officiis enim eos dolor sapiente neque aperiam!
         Ullam odio explicabo ratione neque nemo, possimus deleniti rerum, itaque soluta ut repellat? Sit corrupti fuga
@@ -18,6 +20,7 @@
         nesciunt voluptatibus sunt necessitatibus aut, tempora, delectus soluta at earum aperiam excepturi non rem
         nostrum modi, ab nemo. Incidunt, eveniet explicabo.</p>
     <p>Website created by {{username}}</p>
+    {% endblock %}
 </body>
 
 </html>

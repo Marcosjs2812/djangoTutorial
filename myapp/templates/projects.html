@@ -9,14 +9,17 @@
 </head>
 
 <body>
+    {% extends 'layouts/base.html' %}
+    {% block content %}
     <h1>Projects</h1>
     <p>Projects:
         {% for project in projects %}
         <di>
-            {{ project.name }}
+            <h3>{{ project.name }}</h3>
         </di>
         {% endfor %}
     </p>
+    {% endblock %}
 </body>
 
 </html>
