@@ -1,0 +1,43 @@
+body {
+    background: #4c4872;
+    color: whitesmoke;
+}
+
+.navbar {
+    background: #404040;
+    padding: 10px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    /* Para quitarle la decoración de lista */
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    color: white;
+    /* Para quitarle la decoración de link */
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.card {
+    background: whitesmoke;
+    padding: 10px;
+    color: black;
+    margin-bottom: 2px;
+
+}

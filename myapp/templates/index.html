@@ -10,8 +10,11 @@
 
 <body>
     {% extends 'layouts/base.html' %}
+
+    {% load static %}
     {% block content %}
     <h1>{{title}}</h1>
+    <img src="{% static 'IPN.jpg' %}" alt="" srcset="" , width="150">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Repellendus iure dolor dolores perspiciatis ipsum! Tenetur necessitatibus similique id, ipsum quibusdam quis ut
         esse nisi totam.

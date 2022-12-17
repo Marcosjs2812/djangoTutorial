@@ -14,10 +14,12 @@
     <h1>Projects</h1>
     <p>Projects:
         {% for project in projects %}
-        <di>
+    <article class="card">
+        <a href="{% url 'project_detail' project.id %}">
             <h3>{{ project.name }}</h3>
-        </di>
-        {% endfor %}
+        </a>
+    </article>
+    {% endfor %}
     </p>
     {% endblock %}
 </body>
